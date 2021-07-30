@@ -31,9 +31,9 @@ namespace SaySomething.Test
         public SaySomethingTest()
         {
 
-            /*Normal kullaným :
-             *_sayHelloTo = new SayHelloTo(new SayHelloToService());
-             */
+            //  Normal kullaným :
+            _sayHelloTo = new SayHelloTo(new SayHelloToService());
+
 
             /* Mock ile kullanýmý: 
             * mymock = new Mock<ISayHelloToService>();
@@ -49,18 +49,18 @@ namespace SaySomething.Test
         public void SayHelloToMustafa(string name, string expectedValue)
         {
 
-            /*Normal kullaným:
-            *var value = _sayHelloTo.SayHello(name);
-            */
+            //Normal kullaným:
+            var value = _sayHelloTo.SayHello(name);
+
 
             /*Mock ile kullaným : 
             *mymock.Setup(x => x.SayHelloTo(name)).Returns("Hello " + name);
             *var value = _sayHelloTo.SayHello(name);
             */
 
-            /*
-            *Assert.Equal(expectedValue, value);
-            */
+
+            Assert.Equal(expectedValue, value);
+
         }
     }
 }
