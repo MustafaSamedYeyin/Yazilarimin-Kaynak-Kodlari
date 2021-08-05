@@ -26,7 +26,7 @@ namespace HashAspMoq.Test
         {
             _mock = new Mock<IUserService>();
             _map = new Mapper(new MapperConfiguration(cfg => cfg.AddProfile(new AutoMapping())));
-            _testsController = new TestsController(new Mapper(new MapperConfiguration(cfg => cfg.AddProfile(new AutoMapping()))), _mock.Object);
+            _testsController = new TestsController(_map, _mock.Object);
             _user = new List<User>()
             {
                 new User() {
