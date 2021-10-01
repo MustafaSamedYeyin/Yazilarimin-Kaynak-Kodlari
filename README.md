@@ -1,4 +1,4 @@
 # Yazilarimin-Kaynak-Kodlari
 
-https://hashnode.com/@MustafaSamed
-https://dev.to/mustafasamedyeyin
+# https://hashnode.com/@MustafaSamed
+# https://dev.to/mustafasamedyeyin
